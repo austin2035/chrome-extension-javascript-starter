@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "插件名称",
+  "description": "这里是插件的介绍",
+  "version": "1.0.0",
+  "host_permissions": [
+    "https://example.com/*"
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": ""
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/vendor.js", "js/content_script.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["js/web_accessible_resources.js", "css/content_script.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["storage", "tabs"]
+}
