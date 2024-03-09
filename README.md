@@ -1,8 +1,7 @@
-# Chrome Extension TypeScript Starter
+# Chrome Extension JavaScipt Starter
 
-![build](https://github.com/chibat/chrome-extension-typescript-starter/workflows/build/badge.svg)
 
-Chrome Extension, TypeScript and Visual Studio Code
+Chrome Extension, JavaScript and Visual Studio Code
 
 ## Prerequisites
 
@@ -17,7 +16,6 @@ Chrome Extension, TypeScript and Visual Studio Code
 * TypeScript
 * Webpack
 * React
-* Jest
 * Example Code
     * Chrome Storage
     * Options Version 2
@@ -27,7 +25,6 @@ Chrome Extension, TypeScript and Visual Studio Code
 
 ## Project Structure
 
-* src/typescript: TypeScript source files
 * src/assets: static files
 * dist: Chrome Extension directory
 * dist/js: Generated JavaScript files
@@ -65,8 +62,3 @@ type `Ctrl + Shift + B`
 ## Load extension to chrome
 
 Load `dist` directory
-
-## Test
-`npx jest` or `npm run test`
-# chrome-extension-subtitle-front-end
-# chrome-extension-javascript-starter
